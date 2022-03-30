@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SejinOH</title>
+	<meta name="viewport"
+		content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
+	<title>SejinOH</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script>
+		$(document).ready(function () {
+			$('.bxslider').bxSlider({
+				mode: 'fade',
+				slideWidth: 400,
+				pager: false
+
+			});
+		});
+	</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+		@font-face {
+			font-family: 'Helvetica Neue LT Std 45 Light';
+			font-style: normal;
+			font-weight: normal;
+			src: local('Helvetica Neue LT Std 45 Light'), url('css/HelveticaNeueLTStd45Light_22520.woff') format('woff');
+		}
+
+		.nav>li>a:hover {
+			color: dimgray;
+		}
+
+		.info_e {
+			font-family: 'Helvetica Neue LT Std 45 Light';
+			text-align: center;
+		}
+
+		.insta_mw {
+			text-indent: -9999999px;
+		}
+
+		.works {
+			margin-top: 100px;
+			margin-bottom: 100px;
+
+			border: 3px solid #000;
+			background-color: silver;
+			color: black;
+			/* border-radius: 30px; */
+		}
+
+		.works div>h2 {
+			padding: 10px;
+			border-top: 3px solid #000;
+			border-bottom: 3px solid #000;
+		}
+
+		.works div:first-child>h2 {
+			border-top: none;
+		}
+
+		.works div>h5 {
+			text-align: left;
+			font-size: 20px;
+		}
+
+		.works div>img {
+			z-index: 1;
+		}
+
+		.works div>p {
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 400;
+			line-height: 1.6em;
+			text-align: left;
+		}
+
+		.works div p>a {
+			color: black;
+			background-color: darkorange;
+			font-weight: bolder;
+			border: 2px solid darkorange;
+			border-radius: 10px;
+			padding: 10px;
+			transition: 0.5s;
+			text-align: center;
+		}
+
+		.works div p>a:hover {
+			color: white;
+		}
+
+		.mwslider {
+			position: relative;
+		}
+
+		.mwslider>div {
+			font-size: 0;
+		}
+
+		.mwslider div>a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			animation: slide 10s linear infinite;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.mwslider div a:nth-child(1) {
+			animation-delay: 0s;
+		}
+
+		.mwslider div a:nth-child(2) {
+			animation-delay: 2.5s;
+
+		}
+
+		.mwslider div a:nth-child(3) {
+			animation-delay: 5.0s;
+
+		}
+
+		.mwslider div a:nth-child(4) {
+			animation-delay: 7.5s;
+
+		}
+
+		.mwslider div a:nth-child(5) {
+			animation-delay: 9.0s;
+
+		}
+
+		@keyframes slide {
+			0% {
+				opacity: 0;
+			}
+
+			5% {
+				opacity: 1;
+				visibility: visible;
+
+			}
+
+			25% {
+				opacity: 1;
+
+			}
+
+			30% {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			100% {
+				opacity: 0;
+			}
+		}
+
+		@media all and (min-width:768px) {
+			.works {
+				width: 700px;
+			}
+
+			img {
+				width: 600px;
+			}
+
+			.mwslider {
+				width: 600px;
+				height: 340px;
+			}
+
+			.works div>h5 {
+				padding: 20px 50px;
+			}
+
+			.works div>p {
+				padding: 0px 50px;
+			}
+		}
+
+		@media all and (max-width : 767px) {
+			.works {
+				width: 300px;
+			}
+
+			img {
+				width: 280px;
+			}
+
+			.mwslider {
+				width: 280px;
+				height: 170px;
+			}
+
+			.works div>h5 {
+				padding: 20px 10px;
+			}
+
+			.works div>p {
+				padding: 0px 10px;
+				font-size: small;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="home">
+		<a href="index.html">
+			<h1 class="namelogo">SEJIN OH</h1>
+		</a>
+		<h3 class="gnb">VISUAL PROGRAMMER | INTERACTION DESIGNER</h3>
+		<ul class="nav">
+			<li><a href="1.html">ABOUT</a></li>
+			<li><a href="2.html" style="color: gray">WORKS</a></li>
+			<li><a href="3.html">CONTACT</a></li>
+		</ul>
+		<div class="m_menu">
+			<li>
+				<a href="#">MENU</a>
+				<div class="sub-menu">
+					<a href="1.html">ABOUT</a>
+					<a href="2.html" style="color: gray">WORKS</a>
+					<a href="3.html">CONTACT</a>
+				</div>
+			</li>
+		</div>
+
+		<div class="works">
+			<div class="mediaArt">
+				<h2 style="text-align: center;">MEDIA ART.</h2>
+				<h5>Wave Of Heart</h5>
+				<div class="mwslider">
+					<div>
+						<a href="#"><img src="img/mindwave_01.png" alt="mw01"></a>
+						<a href="#"><img src="img/mindwave_02.png" alt="mw02"></a>
+						<a href="#"><img src="img/mindwave_03.png" alt="mw03"></a>
+						<a href="#"><img src="img/mindwave_04.png" alt="mw04"></a>
+						<a href="#"><img src="img/mindwave_05.png" alt="mw05"></a>
+					</div>
+				</div>
+				<p class="info_e">Interactive Media Art. <br> Sound Interaction + Live Projection Mapping <br> 세종시 조치원 문화정원 전시
+					"수담" <br><br> <a class="insta_mw" href="https://www.instagram.com/p/CDruKDFgYLs/">Instagram</a></p>
+				<br>
+				<br>
+				<hr>
+			</div>
+			<div class="webDesign">
+				<h2 style="text-align: center;">WEB DESIGN & DEVELOPE.</h2>
+				<h5>Recruit 2022 Interacive Page</h5>
+				<img src="img/2022recruit_poster.gif" alt="recruit2022_page">
+				<p class="info_e">Interacive Web Poster <br>Recruit 2022 Open Source Lab <br> 모바일 기기의 기울기 센서를 이용한 웹 포스터
+					<br><br> <a class="insta_mw" href="https://hi-oslab.github.io/recruit2022">Recruit 2022 WEB Poster</a></p>
+				<br>
+				<br>
+				<hr>
+				<h5>Braun Turntable Animation</h5>
+				<img src="img/braun_sk4.gif" alt="osl_page">
+				<p class="info_e">Interactive Web Animation. <br>BRAUN SK4 TURNTABLE | Radio-phonograph combination in 1956 by
+					the company Braun. <br>Illustration Design + Programing by svg animation. <br><br> <a class="insta_mw"
+						href="https://designersejinoh.github.io/braun_diterrams/">DEMO WEBSITE</a></p>
+				<br>
+				<br>
+				<hr>
+				<h5>Freitag Brand Promotion</h5>
+				<img src="img/freitag.jpg" alt="osl_page">
+				<p class="info_e">Interactive Brand Promotion. <br>FREITAG | unique process of the freitag products. <br>Graphic
+					Design + Programing by Processing + 3D Modeling <br><br> <a class="insta_mw"
+						href="https://www.instagram.com/p/CAI_jZ3gnpA/?utm_source=ig_web_copy_link">Instagram</a></p>
+				<br>
+				<br>
+				<hr>
+				<h5>The1975 Live Album Page</h5>
+				<img src="img/the1975.jpg" alt="osl_page">
+				<p class="info_e">Live Album Cover Website. <br>THE 1975 | Frail State of my mind. <br>live typography artwork
+					by p5.js <br><br> <a class="insta_mw" href="https://designersejinoh.github.io/THE1975/">DEMO WEBSITE</a>
+				</p>
+				<br>
+				<br>
+				<hr>
+				<h5>Hangeul Mobile Typo</h5>
+				<img src="img/typoHangeul.gif" alt="osl_page">
+				<p class="info_e">Interactive Typography. <br>HANGEUL | Korean traditional Language. <br>live typography artwork
+					by p5.js <br><br> <a class="insta_mw" href="https://designersejinoh.github.io/Live/">GO TO WEBSITE</a>
+				</p>
+				<br>
+				<br>
+				<hr>
+				<h5>Open Source Lab Canvas</h5>
+				<img src="img/osl_page.gif" alt="osl_page">
+				<p class="info_e">Web Design + p5.js Develope. <br>Open Source Lab | Hongik univ. interactive media art crew
+					<br><br> <a class="insta_mw" href="https://hi-oslab.github.io/home/">Open Source Lab</a></p>
+				<br>
+				<br>
+				<hr>
+			</div>
+			<div class="visualProgramming">
+				<h2 style="text-align: center;">VISUAL PROGRMMING.</h2>
+				<h5>Acceleration Typography</h5>
+				<img src="img/typomobile.jpg" alt="dcs03">
+				<p class="info_e">Interactive Typography Experiment. <br> Mobile Acceleration Interaction by p5.js
+					<br><br> <a class="insta_mw" href="https://editor.p5js.org/SejinO/full/wEbrTUyGc">Mobile Typo</a></p>
+				<br>
+				<br>
+				<hr>
+				<h5>Data wave</h5>
+				<img src="img/dcs03.gif" alt="dcs03">
+				<p class="info_e">Interactive Motion Graphics. <br> inspired by Flowfield Algorithm</p>
+				<br>
+				<br>
+				<hr>
+				<h5>Sine bpm</h5>
+				<img src="img/dcs02.gif" alt="dcs02">
+				<p class="info_e">Generative Motion Graphics. <br> inspired by Sine Wave Algorithm</p>
+				<br>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

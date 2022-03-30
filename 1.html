@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SejinOH</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	<meta name="viewport"
+		content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
+	<title>SejinOH</title>
+	<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+	<style>
+		@font-face {
+			font-family: 'Helvetica Neue LT Std 45 Light';
+			font-style: normal;
+			font-weight: normal;
+			src: local('Helvetica Neue LT Std 45 Light'), url('css/HelveticaNeueLTStd45Light_22520.woff') format('woff');
+		}
+
+		.nav>li>a:hover {
+			color: dimgray;
+		}
+
+		.textBox {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: 3px solid #fff;
+			word-break: keep-all;
+			word-wrap: normal;
+		}
+
+		.info_e {
+			font-family: 'Helvetica Neue LT Std 45 Light';
+			letter-spacing: 0.005em;
+			line-height: 1.6em;
+			padding: 20px;
+			border-bottom: 3px solid #fff;
+		}
+
+		.info_k {
+			font-family: 'Noto Sans KR', sans-serif;
+			letter-spacing: -0.05em;
+			line-height: 1.6em;
+			padding: 20px;
+		}
+
+		@media all and (min-width:768px) {
+			.textBox {
+				text-align: left;
+				width: 640px;
+			}
+		}
+
+		@media all and (max-width : 767px) {
+			.textBox {
+				text-align: center;
+				width: 350px;
+			}
+			.info_e{
+				font-size: small;
+			}
+			.info_k{
+				font-size: small;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<div class="home">
+		<a href="index.html">
+			<h1 class="namelogo">SEJIN OH</h1>
+		</a>
+		<h3 class="gnb">VISUAL PROGRAMMER | INTERACTION DESIGNER</h3>
+		<ul class="nav">
+			<li><a href="1.html" style="color: gray">ABOUT</a></li>
+			<li><a href="2.html">WORKS</a></li>
+			<li><a href="3.html">CONTACT</a></li>
+		</ul>
+		<div class="m_menu">
+			<li>
+				<a href="#">MENU</a>
+				<div class="sub-menu">
+					<a href="1.html">ABOUT</a>
+					<a href="2.html">WORKS</a>
+					<a href="3.html">CONTACT</a>
+				</div>
+			</li>
+		</div>
+		<div class="textBox">
+			<div class="aboutInfo">
+				<p class="info_e"> Born in Seoul, republic of Korea in 1999, SejinOH is a interactive media desinger. <br>
+					Main fields of work are web design and media art.
+					<br>Now, He is studying colleage of design convergence at <a href="http://www.hongik.ac.kr/"
+						style="text-decoration: underline; ">Hongik University</a>.
+				</p>
+				<p class="info_k">
+					2018 - 2022 | 홍익대학교 조형대학 디자인컨버전스학부 <br>
+					2019 - 2022 | Open Source Lab 리드 멤버
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
